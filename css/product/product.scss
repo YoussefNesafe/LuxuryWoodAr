@@ -1,0 +1,92 @@
+header {
+  .text-center {
+    h1.h1 {
+      font-size: 4em;
+    }
+  }
+}
+@media (max-width: 955px) {
+  header {
+    .text-center {
+      h1.h1 {
+        font-size: 3em;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  header {
+    .text-center {
+      h1.h1 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  header {
+    .text-center {
+      h1.h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
+/*End Header*/
+.bedroom,
+.kitchen,
+.office,
+.door,
+.others {
+  .line {
+    &:hover:before {
+      animation: lump 2.4s 1 ease-in-out;
+    }
+  }
+  img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  a {
+    color: #333;
+    transition: 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+    &:hover i {
+      animation: shek 1s infinite ease-in-out;
+    }
+  }
+}
+@keyframes shek {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 130%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  transform: rotateZ(30deg);
+  z-index: 3;
+}
+@keyframes lump {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: 110%;
+  }
+}

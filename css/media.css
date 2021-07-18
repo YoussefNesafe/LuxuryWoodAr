@@ -1,0 +1,76 @@
+@media (max-width: 767px) {
+  .bedroom h1.h1::before,
+  .bedroom h1.h1::after {
+    width: 20%;
+  }
+  .navbar {
+    background: #000 !important;
+  }
+  span.lines {
+    display: none;
+  }
+  .polygon {
+    clip-path: none;
+  }
+  .rhombus {
+    clip-path: none;
+  }
+  .bg-gold {
+    background: var(--gold-color);
+  }
+  .bg-img-concept {
+    display: none;
+  }
+  .work-title::after {
+    display: none;
+  }
+  .bg-story .our-story {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .bedroom h1.h1 {
+    font-size: 30px;
+  }
+  .our-work .content-title {
+    flex-direction: column;
+  }
+  .logo-img {
+    width: 300px !important;
+  }
+  .center .img-fluid {
+    max-width: none;
+  }
+}
+@media (max-width: 365px) {
+  .bedroom h1.h1 {
+    font-size: 25px;
+  }
+  .story-title h2.h2 {
+    font-size: 25px;
+  }
+  .story-title h5.h5 {
+    font-size: 18px;
+  }
+  .our-story p.lead {
+    font-size: 16px;
+  }
+}
+@media (max-width: 335px) {
+  .story-title h2.h2 {
+    font-size: 20px;
+  }
+  .story-title h5.h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 300px) {
+  .our-story p.lead {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .legacy .legacy-content {
+    left: 30px;
+  }
+}

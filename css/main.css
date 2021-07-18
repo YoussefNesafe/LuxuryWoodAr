@@ -1,0 +1,170 @@
+:root {
+  --gold-color: #c28b1f;
+  --black-color: #282828;
+}
+.bg-brown {
+  background-color: rgb(209, 102, 41);
+}
+
+/* Start To Top Button  */
+#toTopButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #111;
+  z-index: 1000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  font-weight: 400;
+}
+#toTopButton:hover {
+  background: #000;
+  font-weight: 400;
+}
+
+/*Start The Main Style*/
+
+header {
+  height: 100vh;
+  background: url(/images/test2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+nav {
+  z-index: 100;
+  min-height: 70px;
+  transition: 0.5s;
+}
+nav .navbar-brand {
+  border-bottom: 2px solid #fff;
+}
+
+nav ul li {
+  transition: 0.3s;
+  border-radius: 10px;
+}
+nav ul li:hover,
+nav ul li.active {
+  color: #fff;
+  text-shadow: 0px 0px 4px #fff;
+}
+nav ul li.active {
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 10px #f5f5f5;
+}
+.bg-story {
+  background-image: url(/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.bg-story .our-story {
+  background: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.bg-img-perf {
+  display: block;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120%;
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.4;
+  position: absolute;
+  right: -120px;
+  bottom: -10%;
+}
+
+.perf::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  background: #888;
+  bottom: 0;
+  right: -150px;
+}
+.work-title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #999;
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+}
+.our-work .content-title h4 a:hover {
+  transition: 0.4s;
+  color: #000;
+  text-decoration: none;
+}
+.load-work a {
+  color: #777;
+  border-bottom: 2px solid #999;
+}
+.load-work a:hover {
+  text-decoration: none;
+}
+.legacy {
+  min-height: 100vh;
+  background-image: url(/images/bg.jpg);
+  margin-right: 13%;
+  background-position: center;
+  background-size: cover;
+}
+.legacy .legacy-content {
+  min-height: 90vh;
+  top: 100px;
+  left: 100px;
+  z-index: 4;
+}
+.bedroom h1.h1 {
+  position: relative;
+}
+.bedroom h1.h1::before,
+.bedroom h1.h1::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #222;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bedroom h1.h1::after {
+  right: 0;
+}
+.contact i:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: #000;
+}

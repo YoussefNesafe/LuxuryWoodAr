@@ -1,0 +1,126 @@
+header .text-center h1.h1 {
+  font-size: 4em;
+}
+
+@media (max-width: 955px) {
+  header .text-center h1.h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 720px) {
+  header .text-center h1.h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  header .text-center h1.h1 {
+    font-size: 2em;
+  }
+}
+
+/*End Header*/
+.bedroom .line:hover:before,
+.kitchen .line:hover:before,
+.office .line:hover:before,
+.door .line:hover:before,
+.others .line:hover:before {
+  -webkit-animation: lump 2.4s 1 ease-in-out;
+          animation: lump 2.4s 1 ease-in-out;
+}
+
+.bedroom img,
+.kitchen img,
+.office img,
+.door img,
+.others img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bedroom a,
+.kitchen a,
+.office a,
+.door a,
+.others a {
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.bedroom a:hover,
+.kitchen a:hover,
+.office a:hover,
+.door a:hover,
+.others a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.bedroom a:hover i,
+.kitchen a:hover i,
+.office a:hover i,
+.door a:hover i,
+.others a:hover i {
+  -webkit-animation: shek 1s infinite ease-in-out;
+          animation: shek 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes shek {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes shek {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 130%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  -webkit-transform: rotateZ(30deg);
+          transform: rotateZ(30deg);
+  z-index: 3;
+}
+
+@-webkit-keyframes lump {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes lump {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+/*# sourceMappingURL=product.css.map */
