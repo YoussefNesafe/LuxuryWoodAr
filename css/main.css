@@ -5,7 +5,9 @@
 .bg-brown {
   background-color: rgb(209, 102, 41);
 }
-
+body {
+  font-family: "Almarai", sans-serif;
+}
 /* Start To Top Button  */
 #toTopButton {
   position: fixed;
